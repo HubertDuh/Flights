@@ -3,14 +3,14 @@
 - [ ] Refactoring
 - [ ] Bug Fix
 - [ ] Testing
-
+- [ ] Miscellaneous
 
 ### Description
-_Explain in a few lines what you're trying to do_
+_Explain in a few lines how and what this PR is trying to achieve as well as what changed_
 
 ### How to test
-_Describe how the reviewers can test the PR_
+_Describe how the reviewers can test this PR_
 
-### Additional notes
-_add any additional notes_
+### Additional Notes
+__Add any additional notes for the reviewers_
 
