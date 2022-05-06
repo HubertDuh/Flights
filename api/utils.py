@@ -8,7 +8,6 @@ def solid_example_1(*, example_param_1: str, example_param_2: int):
     :return:
     """
 
-    # TODO: This is a TODO. You must do this
 
 
 def solid_example_2(example_param_1: float) -> int:
