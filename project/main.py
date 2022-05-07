@@ -3,6 +3,9 @@ from data import aggregate
 from  project.config import settings
 
 START_DT = settings.Start_DT
+from project.config import settings
+
+START_DT = settings.START_DT
 END_DT = settings.END_DT
 
 
@@ -35,7 +38,19 @@ def main_wrapper():
 
     # EXAMPLE 2: Formed
     df = aggregate.forming_dataset(start_time=START_DT, end_time=END_DT)
+    #5. Need to introduce fixed dataset (link). Adding data_ignore to env
 
+    #6. Now have forming_dataset! Have env variable tied into config in project, Need to use unix time info. Our fetcher needs to change a bit.
+    # EXAMPLE1: Forming dataset
+    flight_list_formed = aggregate.forming_dataset(start_time=START_DT, end_time=END_DT)
+
+    # EXAMPLE2: Fixed dataset
+    flight_list_fixed = aggregate.fixed_dataset()
+
+    #7. Make sure the time period is more than 2 year. Export csv look at data!
+
+
+    #8.
     print("This is the end of our python project")
 
 
