@@ -2,9 +2,6 @@ from api import fetcher
 from data import aggregate
 from  project.config import settings
 
-START_DT = settings.Start_DT
-from project.config import settings
-
 START_DT = settings.START_DT
 END_DT = settings.END_DT
 

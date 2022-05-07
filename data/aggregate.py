@@ -59,7 +59,7 @@ def forming_dataset(*, start_time: str, end_time: str) -> pd.DataFrame:
     compression_opts = dict(method='zip',
                             archive_name='out.csv')
 
-    total_df.to_csv("C:/Users/mowgl/Documents/Python/MIAE_Python_Tutorial/MIAE-Python/data_to_ignore/out.zip",
+    total_df.to_csv("/Users/hubert/PycharmProjects/Flights/data_to_ignore/out.zip",
                     compression=compression_opts)
     # Other main thing you can do -> create an explicit date column based on the firstSeen (or lastSeen, though firstSeen is slightly more consistent)
 
