@@ -20,6 +20,6 @@ def forming_dataset(*, start_time: str, end_time: str) -> pd.DataFrame:
 def fixed_dataset() -> pd.DataFrame:
     flight_list = pd.concat(
         pd.read_csv(file, parse_dates=["firstseen", "lastseen", "day"])
-        for file in Path("/Users/hubert/PycharmProjects/Flights/data_set").glob("flightlist_*.csv")
+        for file in Path("/data_sets").glob("flightlist_*.csv")
     )
     return flight_list

@@ -1,5 +1,5 @@
 __pycache__
-data_set/
+data_sets/
 data_to_ignore/
 *.log
 *.out
