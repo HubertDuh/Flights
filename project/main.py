@@ -1,5 +1,9 @@
 from api import fetcher
 from data import aggregate
+from  project.config import settings
+
+START_DT = settings.Start_DT
+END_DT = settings.END_DT
 
 
 # Let's start in main.py showing some wrapper patterns and depicting method attributes.
@@ -22,10 +26,15 @@ def main_wrapper():
     fetcher.states_accessor()
     # fetcher.tracks_accessor()
 
-    #4. Finish API fetcher. Also add some data folders in gitignore. Like data_to_ignore (with sample example) Also utils example
+    # 4. Finish API fetcher. Also add some data folders in gitignore. Like data_to_ignore (with sample example) Also
+    # utils example
 
-    #5. Fized dataset
-    flight_list_fixed = aggregate.fixed_dataset()
+    # 5. Datasets
+    # EXAMPLE 1: Fixed
+    # flight_list_fixed = aggregate.fixed_dataset()
+
+    # EXAMPLE 2: Formed
+    df = aggregate.forming_dataset(start_time=START_DT, end_time=END_DT)
 
     print("This is the end of our python project")
 
